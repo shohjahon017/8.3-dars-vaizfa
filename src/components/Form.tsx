@@ -1,4 +1,3 @@
-// src/components/JobForm.tsx
 import React, { useState } from "react";
 
 interface JobData {
@@ -12,7 +11,7 @@ interface JobData {
   location: string;
   skills: {
     fullstack: boolean;
-    midweight: boolean;
+    javaScript: boolean;
     python: boolean;
     react: boolean;
   };
@@ -30,7 +29,7 @@ const Form: React.FC = () => {
     location: "",
     skills: {
       fullstack: false,
-      midweight: false,
+      javaScript: false,
       python: false,
       react: false,
     },
@@ -78,7 +77,7 @@ const Form: React.FC = () => {
       location: "",
       skills: {
         fullstack: false,
-        midweight: false,
+        javaScript: false,
         python: false,
         react: false,
       },
@@ -184,7 +183,7 @@ const Form: React.FC = () => {
             >
               <option value="">Tanlang</option>
               <option value="tashkent">Tashkent</option>
-              <option value="samarkand">Fergana</option>
+              <option value="fergana">Fergana</option>
             </select>
           </div>
         </div>
@@ -205,8 +204,8 @@ const Form: React.FC = () => {
             <label className="flex items-center">
               <input
                 type="checkbox"
-                name="midweight"
-                checked={formData.skills.midweight}
+                name="javaScript"
+                checked={formData.skills.javaScript}
                 onChange={handleSkillChange}
                 className="mr-2"
               />
